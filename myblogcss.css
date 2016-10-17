@@ -1,0 +1,132 @@
+#id2{
+	width:1960px;
+		height:1080px;
+		position: relative;
+		top: 0px;
+		left: 0px;
+	}
+	#id1{
+		color:#cfc;
+		font-size: 55px;
+		font-weight: bold;/*//粗体*/
+		width:300px;
+		height:40px;
+		position:absolute;
+		top: -45px;
+		right:950px;
+		}
+		#id6{
+		color:gray;
+		font-size: 35px;
+		font-weight: bold;/*//粗体*/
+		font-style: italic;/*斜体*/
+		width:35px;
+		height:90px;
+		position:absolute;
+		top: 200px;
+		right:1745px;
+		}
+		#id3{
+		border: 3px solid gray;
+		width:110px;
+		height:190px;
+		position:absolute;
+		top: 200px;
+		right:1600px;
+		}
+		#id4{
+		border: 3px solid gray;
+		width:110px;
+		height:190px;
+		position:absolute;
+		top: 200px;
+		right:1480px;
+		}
+		#id5{
+		border: 3px solid gray;
+		width:110px;
+		height:190px;
+		position:absolute;
+		top: 200px;
+		right:1360px;
+		}
+		#wel{
+		color:gray;
+		font-size: 35px;
+		font-weight: bold;/*//粗体*/
+		font-style: italic;/*斜体*/
+		width:600px;
+		height:50px;
+		position:absolute;
+		top: 25px;
+		right:10px;
+		}
+		#z{
+		background: #336;
+		font-size: 25px;
+		font-family:"华文行楷";
+		border: 3px solid gray;
+		width:400px;
+		height:500px;
+		position:absolute;
+		top: 225px;
+		right:300px;
+		}
+		#z1{
+		font-size: 65px;
+		font-family:"华文行楷";
+		border: 3px solid gray;
+		width:400px;
+		height:65px;
+		position:absolute;
+		top: 160px;
+		right:301px;
+		}
+		#z3{
+		color: black;
+		font-size: 35px;
+		font-family:"华文行楷";
+		width:90px;
+		height:4px;
+		position:absolute;
+		top: 750px;
+		right:450px;
+		}
+		#ad{
+			width: 400px;
+			height: 20px;
+			font-size: 25px;
+			font-family:"华文行楷";
+			border: 6px solid gray;
+			height: 400px;
+			position: fixed;
+			right: 0px;
+			bottom: 0px;
+		}
+		.ad{
+			position: absolute;
+			top: 0px;
+			left: 100px;
+
+		}
+	#closeb{
+		position: absolute;
+		top: 5px;
+		right: 5px
+	}
+	.test{
+		display: none;
+	}
+	#adud{
+		width:800px;
+		 height:400px;
+		 display: none;
+		 
+		
+	}
+	#adudc{
+		width:800px;
+		height:400px;
+		position: absolute;
+		 right: 600px;
+	}
