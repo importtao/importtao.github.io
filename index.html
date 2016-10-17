@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>网站名字</title>
-  <!-- Add some style to your site, see http://getbootstrap.com for details -->
-  <link rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<meta charset="utf-8">></meta>
+	<title>MyBlog</title>
+	<script src="myblogscript.js"></script>
 </head>
 <body>
-  <h1>YOUR SITE TITLE</h1>
-  <p>Your text blahblahbhalbha</p>
-  <p>Another paragraph!  Maybe more text!</p>
+<link rel="stylesheet" type="text/css" href="myblogcss.css">
+<div id="adud" ><img id="adudc" src="adud.jpg" ></div>
+    <button id="close2" style="position: absolute;
+    top: 0px;
+    right: 500px;" onclick="close2()">关闭</button>
+    <button style="position: absolute;
+    top: 0px;
+    right: 500px;display:none" id="open2" onclick="open2()">打开</button><script type="text/javascript">
+    adDownUp();
+    function adDownUp(argument) {
+      setTimeout(adDown,1500);
+    }
+  
+  var a1=document.getElementById('adud');
+  var a2=document.getElementById('adudc');
+  var h = 0;
+  var maxh = a2.height;
+  var step = 5;
+  
+  function adDown(argument) {
+    
+    if (h<maxh) {
+      h+=step;
+      a1.style.height = h+'px';
+      a1.style.display = 'block'
+setTimeout(adDown,15);
+    }else{
+setTimeout(adUp,2000);
+    }
+  }
+  function adUp(){
+    if (h>0) {
+      h-=step;
+      a1.style.height = h+'px';
+      setTimeout(adUp,15);
+    }
+  }
+  
+   //confirm("asasd");
+//confirm("asasd");
+</script><!-- style="position: absolute;
+    top: 5px;
+    right: 5px" --> 
+<div id="id2">
+  	<img src="1.jpg" alt="下载失败显示文本" title="">
+  	<p id="id1" >import tao</p>
+  	<p id="id6">技能图谱</p>
+  	<div id="id3" onmouseover="f12();" onmouseout="f11()"><img src="4.jpg" alt="" title="" ><p style="color:#0ff; font-size: 25px;position:absolute;top: 30px;right:30px;left:30px">web前端</p></div>
+  	<div id="id4"onmouseover="f22();" onmouseout="f21()"><img src="4.jpg" alt="" title=""><p style="color:#0ff;font-size: 25px;position:absolute;top: 30px;right:30px;left:30px">web后台</p></div>
+  	<div id="id5" onmouseover="f32();" onmouseout="f31()"><img src="4.jpg" alt="" title=""><p style="color:#0ff;font-size: 25px;position:absolute;top: 30px;right:30px;left:30px">数据库</p></div>
+
+    
+  	<div id="wel">welcom to my blog!</div>
+  	<textarea id="z"></textarea>
+  	<div id="z1"> &nbsp&nbsp 留言板</div>
+  	<a id="z3" href="mailto:import_tao@163.com?cc=&bcc=import_tao@163.com&subject=主题&body=邮件内容">发送</a>
+</div>
+<div id="ad"><p class="ad">螳螂捕蝉，黄雀在后</p><img src="ad.jpg" id="adc" onclick="wo()"><button id="closeb" onclick="close1()">关闭</button>
+</div>
 </body>
 </html>
