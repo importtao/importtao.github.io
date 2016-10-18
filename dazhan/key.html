@@ -1,0 +1,21 @@
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+<title>无标题文档</title> 
+<script language="javascript" type="text/javascript"> 
+ function keyContent(e) { 
+  var e=e||event; 
+  var keyCode=e.keyCode?e.keyCode:e.which;   
+  character = String.fromCharCode(keyCode); 
+  k = document.getElementById("keys"); 
+  k.innerHTML += character; 
+ } 
+document.onkeypress=keyContent; 
+</script> 
+</head> 
+<body> 
+<p>Displaying Typed Characters</p> 
+<p>This document includes a simple script that displays the keys you type in the paragraph below. Type a few keys and try it. </p> 
+<p id="keys"></p> 
+</body> 
+</html>

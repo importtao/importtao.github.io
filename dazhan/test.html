@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>无标题页</title>
+    <script language="javascript" type="text/javascript">
+    var l =0; var m =0; var y = document.getElementById("c");
+        /*function move(){
+         if(l<=1450){
+         var y = document.getElementById("c");
+          y.style.left=l+'px'; l+=5;
+          setTimeout(move,15) ;
+          
+           }
+           else{
+           
+           m=l;
+		
+            setTimeout(move1,15) ;}
+        }
+           
+        
+         function move1(){
+        if(m>0){
+         var y = document.getElementById("c");
+          y.style.left=m+'px'; m-=5;
+          setTimeout(move1,15) ;
+          
+           }
+           else{
+          l=m;
+            setTimeout(move,15) ;}
+        }
+         function pao(){
+        
+          setTimeout(move,15) ;
+          
+        }
+        
+         function sa(){
+           var r= document.getElementById("t");
+           r.style.fontSize="50px";
+        }
+         function sb(){
+           var r= document.getElementById("t");
+           r.style.fontSize="10px";
+        }*/function display(){
+            document.bgColor="green";
+        }
+var m=10;
+var l=0;
+var x=0;
+function getKey(e){ 
+e = e || window.event; 
+var keycode = e.which ? e.which : e.keyCode; var r= document.getElementById("t");
+
+           //r.style.fontSize=m +"px";
+           m=m+10;
+if(keycode == 87||keycode == 119 ){ //如果按下w键 
+//在这里设置你想绑定的事件
+var y = document.getElementById("c");
+        
+        l=l-10;//r.style.fontSize=m +"px";
+          y.style.top=l+'px';   //y.style.left=5px;  
+} else if(keycode == 65||keycode == 97){           //如果按下a键 
+      var y = document.getElementById("c");
+        
+        x=x-10;//r.style.fontSize=m +"px";
+          y.style.left=x+'px';  
+  }else if(keycode == 83||keycode == 115){        //如果按下s键 
+      var y = document.getElementById("c");
+        
+        l=l+10;//r.style.fontSize=m +"px";
+          y.style.top=l+'px';  
+}else if(keycode == 68||keycode == 100){          //如果按下d键 
+    var y = document.getElementById("c");
+        
+        x=x+10;//r.style.fontSize=m +"px";
+          y.style.left=x+'px';  
+}//如果按下w键 
+} 
+document.onkeypress=getKey;
+</script>
+</head>
+<body onload="display()">
+<div id="t"  align="center">script test</div><!-- onclick="sa()" ondblclick="sb()" -->
+<div ><img src="c.jpg"  id="c"  style="position: absolute; left: 0px;top: 0px" /></div><!-- onclick="pao()" -->
+</body>
+</html>
