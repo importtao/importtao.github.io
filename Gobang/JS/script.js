@@ -218,7 +218,7 @@ var computerAI = function(){
 				mywin[k] = 6;
 				computerwin[k]++;
 				if (computerwin[k]==5) {
-					window.alert("菜狗！");
+					window.alert("菜狗！You are defeated!");
 					gameover = true;
 				}
 			}
